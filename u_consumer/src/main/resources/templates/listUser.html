@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1" align="center" width="89%">
+    <tr>
+        <th>编号</th>
+        <th>用户名</th>
+        <th>昵称</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="list:${list}">
+        <td th:text="${list.id}"></td>
+        <td th:text="${list.userName}"></td>
+        <td th:text="${list.nickName}"></td>
+        <td>
+            <!--<a th:href=""></a>
+            <a th:href=""></a>
+            <a th:href=""></a>-->
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
